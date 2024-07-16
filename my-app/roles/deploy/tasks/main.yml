@@ -16,4 +16,4 @@
   synchronize:
     src: /tmp/app/target
     dest: /usr/local/tomcat/webapps
-    delegate_to: prod
+    delete: yes
