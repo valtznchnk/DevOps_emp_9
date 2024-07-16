@@ -15,5 +15,5 @@
 - name: Copy files app in prod
   synchronize:
     src: /tmp/app/target
-    dest: /usr/local/tomcat/webapps
+    dest: 158.160.175.102:/usr/local/tomcat/webapps
     delete: yes
