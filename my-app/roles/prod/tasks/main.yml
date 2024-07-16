@@ -1,4 +1,4 @@
 ---
 # tasks file for prod
 - name: Copy my-app.war
-  synchronize: src=/tmp/myapp_ans dest=/usr/local/tomcat/webapps/
+  copy: src=/tmp/myapp_ans/my-app.war dest=/usr/local/tomcat/webapps/

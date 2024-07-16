@@ -13,4 +13,4 @@
   shell: "cd /tmp/app && mvn package"
 
 - name: Copy war-file in master
-  synchronize: src=/tmp/app/target dest=/tmp/myapp_ans
+  fetch: src=/tmp/app/target/my-app.war dest=/tmp/myapp_ans
