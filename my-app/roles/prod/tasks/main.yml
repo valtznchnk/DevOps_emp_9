@@ -4,4 +4,4 @@
   synchronize:
     mode: pull
     src: /tmp/my-app.war
-    dest: {{ /usr/local/tomcat/webapps/ }}
+    dest: {{ dest_folder }}
