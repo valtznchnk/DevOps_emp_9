@@ -12,5 +12,8 @@
   become: yes
   shell: "cd /tmp/app && mvn package && cd /tmp/app/target"
 
-- name: Copy war-file in master
-  fetch: src=/tmp/app/target/my-app.war dest=/tmp/myapp_ans/my-app.war
+- name: Copy files app in prod
+  synchronize:
+    src: /tmp/app/target
+    dest: /usr/local/tomcat/webapps
+    delegate_to: prod
