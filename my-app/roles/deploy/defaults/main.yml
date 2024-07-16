@@ -1,2 +1,3 @@
 ---
 # defaults file for deploy
+dest_folder_server = /tmp/myapp_ans

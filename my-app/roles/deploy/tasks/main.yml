@@ -13,6 +13,4 @@
   shell: "cd /tmp/app && mvn package"
 
 - name: Copy war-file in master
-  fetch:
-    src: /tmp/app/target/
-    dest: /tmp/app
+  fetch: src=/tmp/app/target dest={{ dest_folder_server }} mode=755
