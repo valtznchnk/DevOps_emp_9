@@ -1,7 +1,2 @@
 ---
 # tasks file for prod
-- name: Copy files app in prod
-  synchronize:
-    src: /usr/local/tomcat/webapps
-    dest: /tmp/app/target
-    delete: yes
