@@ -1,0 +1,16 @@
+---
+- name: deploy server configuration
+  hosts: deploy
+  become: yes
+
+  roles:
+    - common
+    - deploy
+
+- name: prod server configuration
+  hosts: prod
+  become: yes
+
+  roles:
+    - common
+    - prod
