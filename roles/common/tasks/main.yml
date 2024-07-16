@@ -2,7 +2,7 @@
 # tasks file for common
 - name: install packages
   apt: name={{ item }} state=installed
-  with_itmes:
+  with_items:
     - tree
     - mc
     - htop
