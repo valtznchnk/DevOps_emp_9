@@ -19,6 +19,6 @@
 
 - name: install rsync
   connection: local
-  package:
+  apt:
     name: rsync
     state: present
