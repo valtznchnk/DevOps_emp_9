@@ -1,4 +1,3 @@
 ---
 # defaults file for prod
-src_file_master: /tmp
 dest_folder: /usr/local/tomcat/webapps/
