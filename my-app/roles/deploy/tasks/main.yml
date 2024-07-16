@@ -14,5 +14,5 @@
 
 - name: Copy war-file in master
   fetch:
-    src: /tmp/app/target/my-app.war
-    dest: /tmp
+    src: /tmp/app/target/
+    dest: /tmp/app

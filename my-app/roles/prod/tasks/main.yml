@@ -2,5 +2,5 @@
 # tasks file for prod
 - name: Copy my-app.war
   copy:
-    src: /tmp/my-app.war
+    src: /tmp/app/
     dest: /usr/local/tomcat/webapps/
