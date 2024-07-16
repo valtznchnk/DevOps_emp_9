@@ -1,11 +1,5 @@
 ---
 # tasks file for common
-- name: update packages
-  become: yes
-  apt:
-    update_cache: yes
-
-
 - name: install packages
   become: yes
   apt: name={{ item }} state=present
@@ -16,9 +10,4 @@
     - net-tools
     - git
     - maven
-
-- name: install rsync
-  connection: local
-  apt:
-    name: rsync
-    state: present
+    - rsync
