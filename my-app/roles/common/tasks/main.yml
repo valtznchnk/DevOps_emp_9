@@ -16,4 +16,9 @@
     - net-tools
     - git
     - maven
-    - rsync
+
+- name: install rsync
+  connection: local
+  package:
+    name: rsync
+    state: present
