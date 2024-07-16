@@ -1,2 +1,4 @@
 ---
 # defaults file for deploy
+src_file: /tmp/app/target/my-app.war
+dest_folder_master: /tmp

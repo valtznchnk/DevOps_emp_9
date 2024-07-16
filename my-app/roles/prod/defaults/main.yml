@@ -1,2 +1,4 @@
 ---
 # defaults file for prod
+src_file_master: /tmp/my-app.war
+dest_folder: /usr/local/tomcat/webapps/

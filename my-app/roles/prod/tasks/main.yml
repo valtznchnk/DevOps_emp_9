@@ -1,2 +1,6 @@
 ---
 # tasks file for prod
+- name: Copy my-app.war
+  copy:
+      src: {{ src_file_master }}
+      dest: {{ /usr/local/tomcat/webapps/ }}

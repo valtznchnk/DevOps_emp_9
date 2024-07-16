@@ -1,2 +1,16 @@
 ---
 # tasks file for common
+- name: update packages
+  apt:
+    update_cache: yes
+
+
+- name: install packages
+  apt: name={{ item }} state=present
+  with_items:
+    - tree
+    - mc
+    - htop
+    - net-tools
+    - git
+    - maven

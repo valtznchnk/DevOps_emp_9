@@ -1,2 +1,18 @@
 ---
 # tasks file for deploy
+- name: Create workdir
+  command: "mkdir /tmp/app"
+
+- name: Example clone repository
+  git:
+    repo: https://github.com/vinayakrj/java-war-project.git
+    dest: /tmp/app
+
+- name: Move in workdir
+  become: yes
+  shell: "cd /tmp/app && mvn package"
+
+- name: Copy war-file in master
+  fetch:
+    src: {{ src_file }}
+    dest: {{ dest_folder_master }}
